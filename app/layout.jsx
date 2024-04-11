@@ -13,8 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={spacegrotesk.className}>
-        <Header />
-        {children}
+        <div className="bg-green-50">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
