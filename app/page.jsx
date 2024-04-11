@@ -1,10 +1,11 @@
+import { FaArrowRight } from "react-icons/fa";
 import Button from "@/components/Button";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <section className="bg-black text-white p-8">
+      <section className="bg-black text-white p-8 rounded-es-3xl">
         <div className="w-5/6 mx-auto">
           <h1 className="text-7xl">
             Unlock your{" "}
@@ -13,7 +14,7 @@ export default function Home() {
           </h1>
 
           <div className="flex items-center gap-10">
-            <div className="w-1/3 p-4 flex gap-8 flex-col">
+            <div className="w-1/3 p-4 flex items-start gap-8 flex-col">
               <p>
                 Achieve business success with sadorect services. Our
                 comprehensive solutions help unlock brand potentials and take
@@ -30,10 +31,19 @@ export default function Home() {
                 className="w-full h-full"
               />
             </div>
-            <div className="w-1/3 p-4">
-              <p>Fast and efficient</p>
-              <p>Flexible and reliable </p>
-              <p>Affordable and quality services</p>
+            <div className="w-1/3 p-4 flex flex-col gap-10">
+              <div className="flex items-center gap-2">
+                <FaArrowRight className="text-primarycolor" />
+                <p>Fast and efficient</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <FaArrowRight className="text-primarycolor" />
+                <p>Flexible and reliable </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <FaArrowRight className="text-primarycolor" />
+                <p>Affordable and quality services</p>
+              </div>
             </div>
           </div>
         </div>
