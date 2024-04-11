@@ -1,7 +1,9 @@
 function Button({ title }) {
   return (
     <>
-      <button>{title}</button>
+      <button className="bg-primarycolor p-4 rounded-lg font-bold">
+        {title}
+      </button>
     </>
   );
 }

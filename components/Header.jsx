@@ -4,10 +4,10 @@ import Button from "./Button";
 function Header() {
   return (
     <>
-      <header className="">
-        <h1>sadorect</h1>
+      <header className="flex justify-between items-center p-4 bg-black text-white ">
+        <h1 className="font-bold">sadorect</h1>
 
-        <div>
+        <div className="flex gap-3">
           <Link href={"#"}>Home</Link>
           <Link href={"#"}>Products</Link>
           <Link href={"#"}>Tools</Link>
