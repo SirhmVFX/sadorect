@@ -48,6 +48,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="w-4/6 mx-auto">
+        <section className="p-10">
+          <div className="flex items-center flex-col gap-4">
+            <h1 className="text-5xl">
+              Affordable and quality services with{" "}
+              <span className="font-bold text-primarycolor">sadorect</span>
+            </h1>
+            <p className="text-gray-500 text-lg text-center">
+              Our service are tailored to meet unique needs and challenges of
+              each brand, and are designed to provide the right brand identity
+              necessary to help brands reach their full potential
+            </p>
+          </div>
+
+          <div className="py-10 flex gap-8 justify-center">
+            <div className="p-4 bg-gray-50 rounded-lg border border-primarycolor ">
+              <p>Brand Strategy and Positioning</p>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg border border-primarycolor ">
+              <p>Digital Presence and Web Development</p>
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg border border-primarycolor ">
+              <p>Brand Identity Development</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 }
