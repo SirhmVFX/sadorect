@@ -1,4 +1,5 @@
 import FeaturesSection from "@/components/FeaturesSection";
+import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions";
 import GetStartedSection from "@/components/GetStartedSection";
 import HeroSection from "@/components/HeroSection";
 import PastProjectsSection from "@/components/PastProjectsSection";
@@ -17,6 +18,7 @@ export default function Home() {
         <SoftwareSections />
         <PastProjectsSection />
         <GetStartedSection />
+        <FrequentlyAskedQuestions />
       </div>
     </>
   );
