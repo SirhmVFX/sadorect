@@ -3,12 +3,13 @@ import Image from "next/image";
 function TestimonialSection() {
   return (
     <>
-      <section className="p-10 flex flex-col gap-10">
+      <section className="px-10 py-28 flex flex-col gap-10">
         <div className="flex items-center gap-4">
           <div className="w-4/5">
             <h1 className="font-bold">Empowering Brands</h1>
             <h1 className=" text-5xl">
-              Our Positive <span className="text-primarycolor">Impact</span>
+              Our Positive{" "}
+              <span className="font-bold text-primarycolor">Impact</span>
             </h1>
             <p className="text-lg text-gray-500">
               Our brand solutions are designed to help businesses achieve their
