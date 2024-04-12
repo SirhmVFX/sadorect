@@ -1,9 +1,9 @@
-import { FaStar } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import Image from "next/image";
 function TestimonialSection() {
   return (
     <>
-      <section className="p-8 flex flex-col gap-8">
+      <section className="p-10 flex flex-col gap-10">
         <div className="flex items-center gap-4">
           <div className="w-4/5">
             <h1 className="font-bold">Empowering Brands</h1>
@@ -36,7 +36,7 @@ function TestimonialSection() {
           </div>
         </div>
 
-        <div>
+        <div className=" flex flex-col gap-4">
           <div className="flex gap-4">
             <div className=" w-1/3 bg-white p-6 rounded-3xl flex flex-col gap-4">
               <h1 className="font-bold text-lg">Transformative Experinece</h1>
@@ -120,7 +120,10 @@ function TestimonialSection() {
               </div>
             </div>
           </div>
-          <div></div>
+          <div className="flex gap-2">
+            <FaArrowLeft className="text-5xl hover:border hover:border-primarycolor bg-white p-4 rounded-md" />
+            <FaArrowRight className="text-5xl hover:border hover:border-primarycolor bg-white p-4 rounded-md" />
+          </div>
         </div>
       </section>
     </>
