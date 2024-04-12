@@ -79,7 +79,7 @@ function FeaturesSection() {
             </div>
             <div className="w-1/2 h-[450px]">
               <Image
-                src={"/img1.webp"}
+                src={"/img33.jpeg"}
                 alt="img"
                 width={1000}
                 height={1000}
@@ -163,7 +163,7 @@ function FeaturesSection() {
             </div>
             <div className="w-1/2 h-[450px]">
               <Image
-                src={"/img1.webp"}
+                src={"/img11.jpeg"}
                 alt="img"
                 width={1000}
                 height={1000}
