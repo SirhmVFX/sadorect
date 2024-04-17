@@ -1,6 +1,19 @@
+"use client";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import Image from "next/image";
+import Testimonial from "./Testimonial";
 function TestimonialSection() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <section className="px-10 py-28 flex flex-col gap-10">
@@ -38,92 +51,18 @@ function TestimonialSection() {
         </div>
 
         <div className=" flex flex-col gap-4">
-          <div className="flex gap-4">
-            <div className=" w-1/3 bg-white p-6 rounded-3xl flex flex-col gap-4">
-              <h1 className="font-bold text-lg">Transformative Experinece</h1>
-              <p className="text-gray-500 text-sm">
-                Working with sadorect was a transformative experience for my
-                brand. The tailored solutions and friendly support exceeded my
-                expectations. I highly recommend them
-              </p>
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <div className="w-[60px] h-[60px]">
-                    <Image
-                      src={"/mintosin.jpeg"}
-                      width={1000}
-                      height={1000}
-                      alt="img"
-                      className="w-full h-full object-cover rounded-md"
-                    />
-                  </div>
-                  <div>
-                    <h1 className="font-bold">Omojola Tosin</h1>
-                    <p className="text-[12px] text-gray-500">
-                      Director, Sadorect
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className=" w-1/3 bg-white p-6 rounded-3xl flex flex-col gap-4">
-              <h1 className="font-bold text-lg">Transformative Experinece</h1>
-              <p className="text-gray-500 text-sm">
-                Working with sadorect was a transformative experience for my
-                brand. The tailored solutions and friendly support exceeded my
-                expectations. I highly recommend them
-              </p>
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <div className="w-[60px] h-[60px]">
-                    <Image
-                      src={"/mintosin.jpeg"}
-                      width={1000}
-                      height={1000}
-                      alt="img"
-                      className="w-full h-full object-cover rounded-md"
-                    />
-                  </div>
-                  <div>
-                    <h1 className="font-bold">Omojola Tosin</h1>
-                    <p className="text-[12px] text-gray-500">
-                      Director, Sadorect
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className=" w-1/3 bg-white p-6 rounded-3xl flex flex-col gap-4">
-              <h1 className="font-bold text-lg">Transformative Experinece</h1>
-              <p className="text-gray-500 text-sm">
-                Working with sadorect was a transformative experience for my
-                brand. The tailored solutions and friendly support exceeded my
-                expectations. I highly recommend them
-              </p>
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <div className="w-[60px] h-[60px]">
-                    <Image
-                      src={"/mintosin.jpeg"}
-                      width={1000}
-                      height={1000}
-                      alt="img"
-                      className="w-full h-full object-cover rounded-md"
-                    />
-                  </div>
-                  <div>
-                    <h1 className="font-bold">Omojola Tosin</h1>
-                    <p className="text-[12px] text-gray-500">
-                      Director, Sadorect
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex gap-2">
-            <FaArrowLeft className="text-5xl hover:border hover:border-primarycolor bg-white p-4 rounded-md" />
-            <FaArrowRight className="text-5xl hover:border hover:border-primarycolor bg-white p-4 rounded-md" />
+          <div className="">
+            <Slider {...settings}>
+              <Testimonial />
+              <Testimonial />
+              <Testimonial />
+              <Testimonial />
+              <Testimonial />
+              <Testimonial />
+              <Testimonial />
+              <Testimonial />
+              <Testimonial />
+            </Slider>
           </div>
         </div>
       </section>

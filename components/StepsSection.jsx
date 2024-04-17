@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function StepsSection() {
   return (
     <>
@@ -8,7 +10,15 @@ function StepsSection() {
         </h1>
 
         <div className="flex w-full gap-8">
-          <div className="w-2/4"></div>
+          <div className="w-2/4 h-[400px]">
+            <Image
+              src={"/3d5.gif"}
+              width={1000}
+              height={1000}
+              alt="2d"
+              className="w-full h-full object-contain"
+            />
+          </div>
           <div className="w-2/4 flex flex-col gap-4">
             <div className="flex items-center gap-4 p-4">
               <div className="w-[40px] h-[40px] bg-primarycolor rounded-lg flex justify-center items-center p-6">
@@ -34,8 +44,8 @@ function StepsSection() {
                 </h1>
                 <p className=" text-gray-500">
                   Our Team would review your brand details aand start execution
-                  with all necessary information you've provided upon a payment
-                  agreement and execution time frame
+                  with all necessary information you`&apos`ve provided upon a
+                  payment agreement and execution time frame
                 </p>
               </div>
             </div>

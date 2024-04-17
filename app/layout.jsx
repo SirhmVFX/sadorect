@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={spacegrotesk.className}>
-        <div className="bg-green-50">
+        <div className="bg-gray-50">
           <Header />
           {children}
           <Footer />

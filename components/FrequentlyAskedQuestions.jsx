@@ -1,4 +1,6 @@
 import { FaArrowDown } from "react-icons/fa";
+import FAQ from "./Faq";
+import { faqdata } from "@/app/data";
 
 function FrequentlyAskedQuestions() {
   return (
@@ -10,82 +12,9 @@ function FrequentlyAskedQuestions() {
         </h1>
 
         <div className="grid grid-cols-2 gap-6">
-          <div className="p-6 rounded-lg hover:bg-white cursor-pointer border border-gray-200">
-            <div className="flex justify-between py-4">
-              <h1 className="font-bold text-2xl">
-                Are these Services available for small businesses?
-              </h1>
-              <FaArrowDown className="text-lg text-primarycolor" />
-            </div>
-            <p className="text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-              pariatur non explicabo ea fugiat? Architecto in dicta praesentium
-              eum cum.
-            </p>
-          </div>
-          <div className="p-6 rounded-lg hover:bg-white cursor-pointer border border-gray-200">
-            <div className="flex justify-between py-4">
-              <h1 className="font-bold text-2xl">
-                Are these Services affordable for small businesses?
-              </h1>
-              <FaArrowDown className="text-lg text-primarycolor" />
-            </div>
-            <p className="text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-              pariatur non explicabo ea fugiat? Architecto in dicta praesentium
-              eum cum.
-            </p>
-          </div>
-          <div className="p-6 rounded-lg hover:bg-white cursor-pointer border border-gray-200">
-            <div className="flex justify-between py-4">
-              <h1 className="font-bold text-2xl">
-                What Services would i be getting from sadorect?
-              </h1>
-              <FaArrowDown className="text-lg text-primarycolor" />
-            </div>
-            <p className="text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-              pariatur non explicabo ea fugiat? Architecto in dicta praesentium
-              eum cum.
-            </p>
-          </div>
-          <div className="p-6 rounded-lg hover:bg-white cursor-pointer border border-gray-200">
-            <div className="flex justify-between py-4">
-              <h1 className="font-bold text-2xl">
-                Are fast can this services be delivered?
-              </h1>
-              <FaArrowDown className="text-lg text-primarycolor" />
-            </div>
-            <p className="text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-              pariatur non explicabo ea fugiat? Architecto in dicta praesentium
-              eum cum.
-            </p>
-          </div>
-          <div className="p-6 rounded-lg hover:bg-white cursor-pointer border border-gray-200">
-            <div className="flex justify-between py-4">
-              <h1 className="font-bold text-2xl">How do i get started?</h1>
-              <FaArrowDown className="text-lg text-primarycolor" />
-            </div>
-            <p className="text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-              pariatur non explicabo ea fugiat? Architecto in dicta praesentium
-              eum cum.
-            </p>
-          </div>
-          <div className="p-6 rounded-lg hover:bg-white cursor-pointer border border-gray-200">
-            <div className="flex justify-between py-4">
-              <h1 className="font-bold text-2xl">
-                Are the payment plan flexible?
-              </h1>
-              <FaArrowDown className="text-lg text-primarycolor" />
-            </div>
-            <p className="text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
-              pariatur non explicabo ea fugiat? Architecto in dicta praesentium
-              eum cum.
-            </p>
-          </div>
+          {faqdata.map((data) => (
+            <FAQ key={data.id} question={data.question} answer={data.answer} />
+          ))}
         </div>
       </section>
     </>

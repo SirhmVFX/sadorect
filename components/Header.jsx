@@ -8,10 +8,10 @@ function Header() {
         <h1 className="font-bold">sadorect</h1>
 
         <div className="flex gap-8">
-          <Link href={"#"}>Home</Link>
+          <Link href={"/"}>Home</Link>
           <Link href={"#"}>Products</Link>
           <Link href={"#"}>Tools</Link>
-          <Link href={"#"}>Projects</Link>
+          <Link href={"/projects"}>Projects</Link>
           <Link href={"/aboutus"}>About</Link>
           <Link href={"/contactus"}>Contact</Link>
         </div>

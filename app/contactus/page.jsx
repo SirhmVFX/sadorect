@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Link from "next/link";
 
 function ContactUs() {
@@ -27,6 +28,40 @@ function ContactUs() {
               <p className="text-sm text-gray-500">+44 7876 617836</p>
             </div>
           </div>
+        </div>
+
+        <div className="w-4/6 mx-auto flex flex-col gap-4 p-8 items-center">
+          <h1 className="font-bold text-2xl">send us a message</h1>
+
+          <form className="w-full" action="">
+            <div className="flex gap-8">
+              <div className="flex flex-col gap-2 w-2/4">
+                <label htmlFor="">Your name</label>
+                <input
+                  type="text"
+                  placeholder="enter your name"
+                  className="border rounded-md outline-primarycolor p-4 bg-transparent w-full"
+                />
+              </div>
+              <div className="flex flex-col gap-2 w-2/4">
+                <label htmlFor="">Your email </label>
+                <input
+                  type="text"
+                  placeholder="enter your email address"
+                  className="border rounded-md outline-primarycolor p-4 bg-transparent w-full"
+                />
+              </div>
+            </div>
+
+            <textarea
+              name=""
+              id=""
+              className="w-full p-4 rounded-md bg-transparent border outline-primarycolor my-4"
+              placeholder="enter your message..."
+            ></textarea>
+
+            <Button title={"Send message"} />
+          </form>
         </div>
       </section>
     </>

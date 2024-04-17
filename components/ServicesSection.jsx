@@ -4,7 +4,7 @@ function ServiceSection() {
   return (
     <>
       <section className="bg-white rounded-3xl p-14 flex gap-6 ">
-        <div className="w-3/5 flex flex-col gap-8">
+        <div className="w-3/5  flex flex-col gap-8">
           <h1 className="text-4xl">
             Empower your brand with our Cutting-Edge{" "}
             <span className="font-bold text-primarycolor">services</span>
@@ -58,9 +58,16 @@ function ServiceSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6">
-          <div className="p-8 rounded-2xl border border-gray-200">
-            <div></div>
+        <div className="flex w-2/5  flex-col gap-6">
+          <div className="p-8 rounded-2xl border flex flex-col gap-4 border-gray-200">
+            <div className="p-4 rounded-xl bg-gray-100 gap-4 items-center flex">
+              <div className="w-[50px] h-[50px] bg-primarycolor rounded-md"></div>
+              <div className="flex flex-col gap-2">
+                <div className="w-[100px] h-[10px] bg-gray-200"></div>
+                <div className="w-[100px] h-[10px] bg-gray-200"></div>
+              </div>
+            </div>
+
             <div>
               <h1 className="text-xl font-bold">Quick execution process</h1>
               <p>
@@ -72,15 +79,23 @@ function ServiceSection() {
             </div>
           </div>
 
-          <div className="p-8 border-gray-200 border rounded-2xl">
-            <div>
+          <div className="p-8 border-gray-200 flex gap-4 border rounded-2xl">
+            <div className="w-2/4">
               <h1 className="text-xl font-bold">Affordable payment options</h1>
               <p className="text-gray-500">
                 Choose a comfortable payment method from our flexible payment
                 plans
               </p>
             </div>
-            <div></div>
+            <div className="h-full w-2/4">
+              <Image
+                src={"/cus.jpeg"}
+                width={1000}
+                height={1000}
+                alt="cus"
+                className="w-full h-full object-cover rounded-3xl"
+              />
+            </div>
           </div>
         </div>
       </section>
