@@ -23,7 +23,7 @@ function HeroSection() {
             </div>
             <div className="w-1/3 h-full">
               <Image
-                src={"/3d.gif"}
+                src={"/3d2.gif"}
                 width={1000}
                 height={1000}
                 alt="gif"

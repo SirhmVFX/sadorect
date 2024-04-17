@@ -26,20 +26,20 @@ function FeaturesSection() {
         <div className="py-10 flex gap-8 justify-center">
           <div
             onClick={() => setFeatures("info1")}
-            className="p-4 transition-transform duration-300 transform hover:scale-110 bg-gray-50 rounded-lg border border-primarycolor "
+            className="p-4 transition-transform duration-300 transform cursor-pointer hover:scale-110 bg-gray-50 rounded-lg border border-primarycolor "
           >
             <p>Brand Strategy and Positioning</p>
           </div>
 
           <div
             onClick={() => setFeatures("info2")}
-            className="p-4 transition-transform duration-300 transform hover:scale-110 bg-gray-50 rounded-lg border border-primarycolor "
+            className="p-4 transition-transform duration-300 transform cursor-pointer hover:scale-110 bg-gray-50 rounded-lg border border-primarycolor "
           >
             <p>Digital Presence and Web Development</p>
           </div>
           <div
             onClick={() => setFeatures("info3")}
-            className="p-4 transition-transform duration-300 transform hover:scale-110  bg-gray-50 rounded-lg border border-primarycolor "
+            className="p-4 transition-transform duration-300 transform cursor-pointer hover:scale-110  bg-gray-50 rounded-lg border border-primarycolor "
           >
             <p>Brand Identity Development</p>
           </div>

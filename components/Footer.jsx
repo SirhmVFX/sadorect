@@ -24,16 +24,16 @@ function Footer() {
           <div className="flex flex-col gap-4">
             <h1>Company</h1>
 
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/contactus"}>
               Contact us
             </Link>
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/aboutus"}>
               About us
             </Link>
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/privacypolicy"}>
               Privacy Policy
             </Link>
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/termsofservices"}>
               Terms of Service
             </Link>
             <Link className="text-gray-500" href={"#"}>

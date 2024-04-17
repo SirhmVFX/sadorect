@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function ServiceSection() {
   return (
     <>
@@ -8,13 +10,23 @@ function ServiceSection() {
             <span className="font-bold text-primarycolor">services</span>
           </h1>
 
-          <div className="bg-gray-100 border rounded-2xl border-gray-200">
+          <div className="bg-gray-100 border rounded-2xl border-gray-200 flex">
             <div className="p-10">
               <h1 className="text-xl font-bold">Brand Advice and Support</h1>
               <p className="text-gray-500">
                 Our dedicated team is always available to help you every step of
                 the way, with expert guidance and tailored advice
               </p>
+            </div>
+
+            <div className=" h-[200px] w-full">
+              <Image
+                src={"/3d.gif"}
+                width={1000}
+                height={1000}
+                alt="ig"
+                className="w-full h-full object-cover "
+              />
             </div>
           </div>
 
@@ -34,6 +46,15 @@ function ServiceSection() {
                 Affordable and{" "}
                 <span className="text-primarycolor">reliable</span>
               </h1>
+              <div className="w-full h-[200px]">
+                <Image
+                  src={"/3d4.gif"}
+                  width={1000}
+                  height={1000}
+                  alt="ed"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
