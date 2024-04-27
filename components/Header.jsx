@@ -7,7 +7,7 @@ function Header() {
       <header className="flex justify-between items-center p-4 bg-black text-white ">
         <h1 className="font-bold">sadorect</h1>
 
-        <div className="flex gap-8">
+        <div className="hidden md:flex gap-8">
           <Link href={"/"}>Home</Link>
           <Link href={"#"}>Products</Link>
           <Link href={"#"}>Tools</Link>

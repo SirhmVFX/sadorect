@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <div className="w-5/6 mx-auto">
+      <div className="md:w-5/6 mx-auto">
         <FeaturesSection />
         <ServiceSection />
         <TestimonialSection />

@@ -3,23 +3,25 @@ import Image from "next/image";
 function ServiceSection() {
   return (
     <>
-      <section className="bg-white rounded-3xl p-14 flex gap-6 ">
-        <div className="w-3/5  flex flex-col gap-8">
-          <h1 className="text-4xl">
+      <section className="bg-white rounded-3xl p-8 md:p-14 flex flex-col md:flex-row gap-6 ">
+        <div className="md:w-3/5  md:flex-row flex flex-col gap-4 md:gap-8">
+          <h1 className="text-2xl md:text-4xl">
             Empower your brand with our Cutting-Edge{" "}
             <span className="font-bold text-primarycolor">services</span>
           </h1>
 
           <div className="bg-gray-100 border rounded-2xl border-gray-200 flex">
-            <div className="p-10">
-              <h1 className="text-xl font-bold">Brand Advice and Support</h1>
-              <p className="text-gray-500">
+            <div className=" p-4 md:p-10">
+              <h1 className="md:text-xl text-md font-bold">
+                Brand Advice and Support
+              </h1>
+              <p className="text-gray-500 md:text-base text-[11px]">
                 Our dedicated team is always available to help you every step of
                 the way, with expert guidance and tailored advice
               </p>
             </div>
 
-            <div className=" h-[200px] w-full">
+            <div className=" h-[150px] md:h-[200px] w-full">
               <Image
                 src={"/3d.gif"}
                 width={1000}
@@ -31,18 +33,18 @@ function ServiceSection() {
           </div>
 
           <div className="flex gap-4">
-            <div className="p-8 border border-gray-200 w-3/5 rounded-2xl">
-              <h1 className="text-xl font-bold">
+            <div className="p-4 md:p-8 border border-gray-200 w-3/5 rounded-2xl">
+              <h1 className="text-sm md:text-xl font-bold">
                 Wide rande of your brands needs
               </h1>
-              <p className="text-gray-500">
+              <p className="md:text-base text-[11px] text-gray-500">
                 We offer variety of brands services, including short term
                 working service and long term scheduled services
               </p>
             </div>
 
-            <div className="p-8 bg-black rounded-2xl w-2/5 border border-gray-200">
-              <h1 className="text-xl text-white font-bold">
+            <div className="p-4 md:p-8 bg-black rounded-2xl w-2/5 border border-gray-200">
+              <h1 className="text-sm md:text-xl text-white font-bold">
                 Affordable and{" "}
                 <span className="text-primarycolor">reliable</span>
               </h1>

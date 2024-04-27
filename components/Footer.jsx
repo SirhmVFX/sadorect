@@ -33,7 +33,7 @@ function Footer() {
             <Link className="text-gray-500" href={"/privacypolicy"}>
               Privacy Policy
             </Link>
-            <Link className="text-gray-500" href={"/termsofservices"}>
+            <Link className="text-gray-500" href={"/termsofservice"}>
               Terms of Service
             </Link>
             <Link className="text-gray-500" href={"#"}>
