@@ -17,19 +17,19 @@ function TestimonialSection() {
   return (
     <>
       <section className="px-10 py-28 flex flex-col gap-10">
-        <div className="flex items-center gap-4">
-          <div className="w-4/5">
+        <div className="md:flex items-center gap-4">
+          <div className="md:w-4/5">
             <h1 className="font-bold">Empowering Brands</h1>
-            <h1 className=" text-5xl">
+            <h1 className="text-2xl md:text-5xl">
               Our Positive{" "}
               <span className="font-bold text-primarycolor">Impact</span>
             </h1>
-            <p className="text-lg text-gray-500">
+            <p className=" text-gray-500 md:text-base text-[11px] leading-tight ">
               Our brand solutions are designed to help businesses achieve their
               goals and drive economic growth in their local area
             </p>
           </div>
-          <div className="w-1/4">
+          <div className="md:w-1/4">
             <div className="flex items-center gap-1 ">
               <FaStar className="text-primarycolor" />
               <p className="font-bold text-2xl">sadorect</p>

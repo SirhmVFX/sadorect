@@ -4,10 +4,10 @@ function Footer() {
   return (
     <>
       <footer className="w-full p-8 mx-auto mt-20 md:w-5/6">
-        <div className="grid grid-cols-3 gap-36">
+        <div className="grid md:grid-cols-3 gap-10 md:gap-36">
           <div className="flex flex-col gap-4 items-start">
             <h1 className="font-bold text-4xl text-primarycolor">sadorect</h1>
-            <p>
+            <p className="text-[11px] md:text-base text-gray-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quas
               nostrum sunt accusantium amet soluta asperiores rerum saepe
               numquam, blanditiis vitae similique culpa fugit incidunt possimus

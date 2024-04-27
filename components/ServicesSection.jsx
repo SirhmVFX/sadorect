@@ -4,7 +4,7 @@ function ServiceSection() {
   return (
     <>
       <section className="bg-white rounded-3xl p-8 md:p-14 flex flex-col md:flex-row gap-6 ">
-        <div className="md:w-3/5  md:flex-row flex flex-col gap-4 md:gap-8">
+        <div className="md:w-3/5   flex flex-col gap-4 md:gap-8">
           <h1 className="text-2xl md:text-4xl">
             Empower your brand with our Cutting-Edge{" "}
             <span className="font-bold text-primarycolor">services</span>
@@ -48,7 +48,7 @@ function ServiceSection() {
                 Affordable and{" "}
                 <span className="text-primarycolor">reliable</span>
               </h1>
-              <div className="w-full h-[200px]">
+              <div className="w-full h-[100px] md:h-[200px]">
                 <Image
                   src={"/3d4.gif"}
                   width={1000}
@@ -60,8 +60,8 @@ function ServiceSection() {
             </div>
           </div>
         </div>
-        <div className="flex w-2/5  flex-col gap-6">
-          <div className="p-8 rounded-2xl border flex flex-col gap-4 border-gray-200">
+        <div className="flex md:w-2/5  flex-col gap-6">
+          <div className="p-4 md:p-8 rounded-2xl border flex flex-col gap-4 border-gray-200">
             <div className="p-4 rounded-xl bg-gray-100 gap-4 items-center flex">
               <div className="w-[50px] h-[50px] bg-primarycolor rounded-md"></div>
               <div className="flex flex-col gap-2">
@@ -71,9 +71,11 @@ function ServiceSection() {
             </div>
 
             <div>
-              <h1 className="text-xl font-bold">Quick execution process</h1>
+              <h1 className="md:text-xl text-sm font-bold">
+                Quick execution process
+              </h1>
               <p>
-                <p className="text-gray-500">
+                <p className="text-gray-500 md:text-base text-[11px] ">
                   Get your brands services efficiently and properly executed in
                   a very short period of time
                 </p>
@@ -81,10 +83,12 @@ function ServiceSection() {
             </div>
           </div>
 
-          <div className="p-8 border-gray-200 flex gap-4 border rounded-2xl">
+          <div className="p-4 md:p-8 border-gray-200 flex gap-4 border rounded-2xl">
             <div className="w-2/4">
-              <h1 className="text-xl font-bold">Affordable payment options</h1>
-              <p className="text-gray-500">
+              <h1 className="md:text-xl text-[11px] font-bold">
+                Affordable payment options
+              </h1>
+              <p className="text-gray-500 md:text-base text-[11px]">
                 Choose a comfortable payment method from our flexible payment
                 plans
               </p>

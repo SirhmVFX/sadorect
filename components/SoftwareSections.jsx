@@ -38,13 +38,13 @@ import {
 function SoftwareSections() {
   return (
     <>
-      <section className="p-20 rounded-3xl bg-black">
-        <h1 className="text-3xl text-white">
+      <section className="p-6 md:p-20 rounded-3xl bg-black">
+        <h1 className="text-xl md:text-3xl text-white">
           {" "}
           Frameworks and Softwares we work with
         </h1>
-        <div className="flex gap-10 items-center flex-wrap py-8">
-          <FaPython className="text-white text-4xl" />
+        <div className="flex gap-6 md:gap-10 items-center flex-wrap py-8">
+          <FaPython className="text-white md:text-4xl" />
           <FaPhp className="text-white text-4xl" />
           <FaJava className="text-white text-4xl" />
           <FaJs className="text-white text-4xl" />
