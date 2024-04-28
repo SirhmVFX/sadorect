@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 function Header() {
-  const [showModal, setShowmodal] = useState(true);
+  const [showModal, setShowmodal] = useState(false);
   const router = useRouter();
   return (
     <>
