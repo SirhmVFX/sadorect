@@ -13,6 +13,14 @@ function TestimonialSection() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // Breakpoint for mobile screens (adjust as needed)
+        settings: {
+          slidesToShow: 1, // Number of slides to show on mobile
+        },
+      },
+    ],
   };
   return (
     <>

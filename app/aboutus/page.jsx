@@ -6,24 +6,24 @@ function AboutUs() {
       <section className="w-full flex flex-col gap-8 md:w-3/6 mx-auto">
         <div className="p-8 flex flex-col gap-4">
           <p className="text-primarycolor">Introducting</p>
-          <h1 className="text-6xl font-bold">
+          <h1 className="text-xl md:text-6xl font-bold">
             Sadorect, delivering services, teams, training and products{" "}
           </h1>
 
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
             commodi sed vel rem excepturi. Nam sunt enim quibusdam tempore
             molestiae ut aspernatur optio facere porro! Consequuntur fuga sint
             qui illo!
           </p>
 
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
             commodi sed vel rem excepturi. Nam sunt enim quibusdam tempore
             molestiae ut aspernatur optio facere porro! Consequuntur fuga sint
             qui illo!
           </p>
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
             commodi sed vel rem excepturi. Nam sunt enim quibusdam tempore
             molestiae ut aspernatur optio facere porro! Consequuntur fuga sint
@@ -34,20 +34,20 @@ function AboutUs() {
         <div className="p-8 flex flex-col gap-4">
           <h1 className="text-4xl font-bold">The Vision</h1>
 
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
             commodi sed vel rem excepturi. Nam sunt enim quibusdam tempore
             molestiae ut aspernatur optio facere porro! Consequuntur fuga sint
             qui illo!
           </p>
 
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
             commodi sed vel rem excepturi. Nam sunt enim quibusdam tempore
             molestiae ut aspernatur optio facere porro! Consequuntur fuga sint
             qui illo!
           </p>
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             fugiat, vero sequi voluptas possimus in aperiam numquam
             necessitatibus quisquam nihil officiis! Maiores odit neque deleniti.
@@ -63,7 +63,7 @@ function AboutUs() {
         <div className="p-8 flex flex-col gap-4">
           <h1 className="text-4xl font-bold">Mision Statement</h1>
 
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
             commodi sed vel rem excepturi. Nam sunt enim quibusdam tempore
             molestiae ut aspernatur optio facere porro! Consequuntur fuga sint
@@ -80,13 +80,13 @@ function AboutUs() {
             />
           </div>
 
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
             commodi sed vel rem excepturi. Nam sunt enim quibusdam tempore
             molestiae ut aspernatur optio facere porro! Consequuntur fuga sint
             qui illo!
           </p>
-          <p className="text-gray-500">
+          <p className="text-[11px] md:text-base text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             fugiat, vero sequi voluptas possimus in aperiam numquam
             necessitatibus quisquam nihil officiis! Maiores odit neque deleniti.

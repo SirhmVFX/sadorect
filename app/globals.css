@@ -6,3 +6,9 @@
 .slick-prev:before {
   @apply bg-primarycolor p-1 rounded-lg;
 }
+
+@media (min-width: 60rem) {
+  .slick-track {
+    display: flex;
+  }
+}
