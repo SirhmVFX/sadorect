@@ -5,9 +5,11 @@ import Button from "./Button";
 
 import { MdOutlineCancel, MdOutlineMenu } from "react-icons/md";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 function Header() {
   const [showModal, setShowmodal] = useState(true);
+  const router = useRouter();
   return (
     <>
       <div>
@@ -37,14 +39,63 @@ function Header() {
         </header>
 
         {showModal ? (
-          <div className="flex flex-col p-10 gap-10 backdrop-filter backdrop-blur-sm absolute text-white left-0 right-0 bottom-0 top-10 bg-[#000000ae]">
-            <Link href={"/"}>Home</Link>
-            <Link href={"#"}>Products</Link>
-            <Link href={"#"}>Tools</Link>
-            <Link href={"/projects"}>Projects</Link>
-            <Link href={"/aboutus"}>About</Link>
-            <Link href={"/contactus"}>Contact</Link>
-            <Button title={"Send a Message"} />
+          <div className="z-20 flex flex-col p-10 gap-10 backdrop-filter backdrop-blur-sm absolute text-white left-0 right-0 bottom-0 top-10 bg-[#000000ae]">
+            <div
+              onClick={() => {
+                setShowmodal(!showModal);
+                router.push("/");
+              }}
+              href={"/"}
+            >
+              Home
+            </div>
+            <div
+              onClick={() => {
+                setShowmodal(!showModal);
+                router.push("/");
+              }}
+              href={"/"}
+            >
+              Products
+            </div>
+            <div
+              onClick={() => {
+                setShowmodal(!showModal);
+                router.push("/");
+              }}
+              href={"/"}
+            >
+              Tools
+            </div>
+            <div
+              onClick={() => {
+                setShowmodal(!showModal);
+                router.push("/");
+              }}
+              href={"/projects"}
+            >
+              Projects
+            </div>
+            <div
+              onClick={() => {
+                setShowmodal(!showModal);
+                router.push("/");
+              }}
+              href={"/aboutus"}
+            >
+              About
+            </div>
+            <div
+              onClick={() => {
+                setShowmodal(!showModal);
+                router.push("/");
+              }}
+              href={"/contactus"}
+            >
+              Contact
+            </div>
+
+            <Button title={"Send a Message"} onclick={"/contactus"} />
           </div>
         ) : (
           ""
