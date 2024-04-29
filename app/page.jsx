@@ -4,6 +4,7 @@ import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions";
 import GetStartedSection from "@/components/GetStartedSection";
 import HeroSection from "@/components/HeroSection";
 import PastProjectsSection from "@/components/PastProjectsSection";
+import Products from "@/components/Products";
 import ServiceSection from "@/components/ServicesSection";
 import SoftwareSections from "@/components/SoftwareSections";
 import StepsSection from "@/components/StepsSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <div className="md:w-5/6 mx-auto">
         <FeaturesSection />
+        <Products />
         <ServiceSection />
         <TestimonialSection />
         <SoftwareSections />

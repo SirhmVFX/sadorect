@@ -10,6 +10,15 @@ import { useRouter } from "next/navigation";
 function Header() {
   const [showModal, setShowmodal] = useState(false);
   const router = useRouter();
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth", // Smooth scrolling behavior
+      });
+    }
+  };
   return (
     <>
       <div>
@@ -18,8 +27,18 @@ function Header() {
 
           <div className="hidden md:flex gap-8">
             <Link href={"/"}>Home</Link>
-            <Link href={"#"}>Products</Link>
-            <Link href={"#"}>Tools</Link>
+            <Link
+              onClick={() => handleScrollToSection("products")}
+              href={"/#products"}
+            >
+              Products
+            </Link>
+            <Link
+              onClick={() => handleScrollToSection("tools")}
+              href={"/#tools"}
+            >
+              Tools
+            </Link>
             <Link href={"/projects"}>Projects</Link>
             <Link href={"/aboutus"}>About</Link>
             <Link href={"/contactus"}>Contact</Link>
@@ -45,52 +64,46 @@ function Header() {
                 setShowmodal(!showModal);
                 router.push("/");
               }}
-              href={"/"}
             >
               Home
             </div>
             <div
               onClick={() => {
                 setShowmodal(!showModal);
-                router.push("/");
+                router.push("/#products");
               }}
-              href={"/"}
             >
               Products
             </div>
             <div
               onClick={() => {
                 setShowmodal(!showModal);
-                router.push("/");
+                router.push("/#tools");
               }}
-              href={"/"}
             >
               Tools
             </div>
             <div
               onClick={() => {
                 setShowmodal(!showModal);
-                router.push("/");
+                router.push("/projects");
               }}
-              href={"/projects"}
             >
               Projects
             </div>
             <div
               onClick={() => {
                 setShowmodal(!showModal);
-                router.push("/");
+                router.push("/aboutus");
               }}
-              href={"/aboutus"}
             >
               About
             </div>
             <div
               onClick={() => {
                 setShowmodal(!showModal);
-                router.push("/");
+                router.push("/contactus");
               }}
-              href={"/contactus"}
             >
               Contact
             </div>

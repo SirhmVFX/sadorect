@@ -36,26 +36,23 @@ function Footer() {
             <Link className="text-gray-500" href={"/termsofservice"}>
               Terms of Service
             </Link>
-            <Link className="text-gray-500" href={"#"}>
-              Contact
-            </Link>
           </div>
           <div className="flex flex-col gap-4">
             <h1>Quick Links</h1>
 
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/#products"}>
               Products
             </Link>
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/#tools"}>
               Tools
             </Link>
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/projects"}>
               Projects
             </Link>
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/aboutus"}>
               About us
             </Link>
-            <Link className="text-gray-500" href={"#"}>
+            <Link className="text-gray-500" href={"/contactus"}>
               Contact us
             </Link>
           </div>

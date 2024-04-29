@@ -38,7 +38,7 @@ import {
 function SoftwareSections() {
   return (
     <>
-      <section className="p-6 md:p-20 rounded-3xl bg-black">
+      <section className="p-6 md:p-20 rounded-3xl bg-black m-4" id="tools">
         <h1 className="text-xl md:text-3xl text-white">
           {" "}
           Frameworks and Softwares we work with

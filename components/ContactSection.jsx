@@ -5,7 +5,7 @@ import { FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 function ContactSection() {
   return (
     <>
-      <section className="p-8 md:p-20 bg-black rounded-3xl">
+      <section className="p-8 md:p-20 bg-black rounded-3xl m-4">
         <div className="md:w-3/5 flex flex-col items-start gap-4">
           <h1 className="text-3xl md:text-6xl text-white">
             Ready to take your business to the next level?{" "}
