@@ -4,7 +4,7 @@ import Image from "next/image";
 function HeroSection() {
   return (
     <>
-      <section className="bg-black text-white p-8 rounded-es-3xl">
+      <section className="bg-black text-white px-8 pb-8 md:pt-28 pt-20 rounded-es-3xl">
         <div className="md:w-5/6 mx-auto">
           <h1 className="text-3xl md:text-7xl">
             Unlock your{" "}
@@ -41,7 +41,7 @@ function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <FaArrowRight className="text-primarycolor" />
-                <p>Affordable and quality services</p>
+                <p>Quality and Affordable services</p>
               </div>
             </div>
           </div>

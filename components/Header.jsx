@@ -22,7 +22,7 @@ function Header() {
   return (
     <>
       <div>
-        <header className="flex justify-between items-center p-4 bg-black text-white ">
+        <header className="flex fixed z-50 w-full justify-between items-center p-4 bg-black bg-opacity-35 backdrop-filter backdrop-blur-md text-white ">
           <h1 className="font-bold">sadorect</h1>
 
           <div className="hidden md:flex gap-8">

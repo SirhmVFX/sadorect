@@ -21,7 +21,6 @@ export default function Home() {
         <TestimonialSection />
         <SoftwareSections />
         <PastProjectsSection />
-        <GetStartedSection />
         <FrequentlyAskedQuestions />
         <StepsSection />
         <ContactSection />
