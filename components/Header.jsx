@@ -58,7 +58,7 @@ function Header() {
         </header>
 
         {showModal ? (
-          <div className="z-20 flex flex-col p-10 gap-10 backdrop-filter backdrop-blur-sm absolute text-white left-0 right-0 bottom-0 top-10 bg-[#000000ae]">
+          <div className="z-20 flex flex-col p-10 gap-10 backdrop-filter backdrop-blur-sm  fixed text-white left-0 right-0 bottom-0 top-10 bg-[#000000ae]">
             <div
               onClick={() => {
                 setShowmodal(!showModal);
