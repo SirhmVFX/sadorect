@@ -6,6 +6,7 @@ import Button from "./Button";
 import { MdOutlineCancel, MdOutlineMenu } from "react-icons/md";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 function Header() {
   const [showModal, setShowmodal] = useState(false);
@@ -23,7 +24,15 @@ function Header() {
     <>
       <div>
         <header className="flex fixed z-50 w-full justify-between items-center p-4 bg-black bg-opacity-35 backdrop-filter backdrop-blur-md text-white ">
-          <h1 className="font-bold">sadorect</h1>
+          <div className=" h-6 md:h-8">
+            <Image
+              src={"/sadorect.svg"}
+              width={1000}
+              height={1000}
+              alt="logo"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
           <div className="hidden md:flex gap-8">
             <Link href={"/"}>Home</Link>

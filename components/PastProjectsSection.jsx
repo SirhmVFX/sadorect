@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-
 function PastProjectsSection() {
   return (
     <>
@@ -13,7 +12,7 @@ function PastProjectsSection() {
           </h1>
           <Link
             className="p-2 md:p-4 flex gap-2 items-center bg-white border border-primarycolor rounded-lg"
-            href={"#"}
+            href={"/projects"}
           >
             View all past projects
             <FaArrowRight />
@@ -24,7 +23,7 @@ function PastProjectsSection() {
           <div className="bg-white md:w-3/5 rounded-3xl">
             <div className="w-full">
               <Image
-                src={"/proj1.png"}
+                src={"/funk.png"}
                 width={1000}
                 height={1000}
                 alt="wb"
@@ -32,12 +31,20 @@ function PastProjectsSection() {
               />
             </div>
 
-            <div className="p-4 md:p-8">
-              <h1 className="font-bold text-md md:text-2xl">ProjectSaveNg</h1>
+            <div className="p-4 flex flex-col gap-4 md:p-8">
+              <h1 className="font-bold text-md md:text-2xl">
+                Future Nautiq Knots
+              </h1>
               <p className="text-[11px] md:text-base">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-                porro?.....
+                FUNKS Ltd is an expert in boat shows and yacht brokerage, ranges
+                from small to large overcraft (boats/vessels).
               </p>
+              <Link
+                href={"https://fnautiqknots.com/ "}
+                className="text-primarycolor font-bold text-sm"
+              >
+                Visit Website
+              </Link>
             </div>
           </div>
 
@@ -45,7 +52,7 @@ function PastProjectsSection() {
             <div className="bg-white rounded-3xl">
               <div className="w-full h-[200px]">
                 <Image
-                  src={"/proj2.jpeg"}
+                  src={"/dao.png"}
                   width={1000}
                   height={1000}
                   alt="wb"
@@ -53,19 +60,29 @@ function PastProjectsSection() {
                 />
               </div>
 
-              <div className="p-4 md:p-8">
-                <h1 className="font-bold text-md md:text-2xl">ProjectSaveNg</h1>
+              <div className="p-4 flex flex-col gap-4 md:p-8">
+                <h1 className="font-bold text-md md:text-2xl">
+                  Divine Daao Cars{" "}
+                </h1>
                 <p className="text-[11px] md:text-base">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-                  porro?.....
+                  Divine Daao Nigeria Limited. RC 1310246 is a car rental
+                  provider positioned to serve the commercial and leisure
+                  segments of the travel industry and focused on value-conscious
+                  clients and customers.{" "}
                 </p>
+                <Link
+                  href={"https://divinedaao.ng "}
+                  className="text-primarycolor font-bold text-sm"
+                >
+                  Visit Website
+                </Link>
               </div>
             </div>
 
             <div className="bg-white rounded-3xl">
               <div className="w-full h-[200px]">
                 <Image
-                  src={"/proj3.avif"}
+                  src={"/bright.png"}
                   width={1000}
                   height={1000}
                   alt="wb"
@@ -73,12 +90,21 @@ function PastProjectsSection() {
                 />
               </div>
 
-              <div className="p-4 md:p-8">
-                <h1 className="font-bold text-md md:text-2xl">ProjectSaveNg</h1>
+              <div className="p-4 flex flex-col gap-4 md:p-8">
+                <h1 className="font-bold text-md md:text-2xl">
+                  Brightbell Janitorial Serivces{" "}
+                </h1>
                 <p className="text-[11px] md:text-base">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-                  porro?.....
+                  Home and CommercialCleaning Done Right Away Get reliable &
+                  affordable cleaning services for your facility with a 100%
+                  satisfaction guaranteed!{" "}
                 </p>
+                <Link
+                  href={"https://brightbelljanitors.com/"}
+                  className="text-primarycolor font-bold text-sm"
+                >
+                  Visit Website
+                </Link>
               </div>
             </div>
           </div>

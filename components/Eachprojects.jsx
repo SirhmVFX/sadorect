@@ -1,12 +1,12 @@
 import Image from "next/image";
-
-function EachProject() {
+import Link from "next/link";
+function EachProject({ name, desc, image, url }) {
   return (
     <>
       <div className="bg-white w-full rounded-md md:rounded-3xl">
         <div className="w-full">
           <Image
-            src={"/proj1.png"}
+            src={image}
             width={1000}
             height={1000}
             alt="wb"
@@ -14,12 +14,16 @@ function EachProject() {
           />
         </div>
 
-        <div className="p-4 md:p-8">
-          <h1 className="font-bold text-md md:text-2xl">ProjectSaveNg</h1>
-          <p className="text-[11px] md:text-base">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-            porro?.....
-          </p>
+        <div className="p-4 flex flex-col gap-4 md:p-8">
+          <h1 className="font-bold text-md md:text-2xl">{name}</h1>
+          <p className="text-[11px] md:text-base">{desc}</p>
+
+          <Link
+            className="text-primarycolor font-bold cursor-pointer text-sm"
+            href={url}
+          >
+            Check it out {url}
+          </Link>
         </div>
       </div>
     </>
