@@ -20,4 +20,11 @@ export const PastProjects = [
     url: "https://brightbelljanitors.com/",
     image: "/bright.png",
   },
+  {
+    id: 4,
+    name: "Glowbox Energy",
+    desc: "Glowbox is an energy service firm committed to delivering cutting-edge solutions to C&I customers with zero tolerance for energy interruptions and an improved carbon footprint.",
+    url: "https://glowboxenergy.com/",
+    image: "/glow.png",
+  },
 ];

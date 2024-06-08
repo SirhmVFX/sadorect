@@ -14,12 +14,12 @@ function EachProject({ name, desc, image, url }) {
           />
         </div>
 
-        <div className="p-4 flex flex-col gap-4 md:p-8">
-          <h1 className="font-bold text-md md:text-2xl">{name}</h1>
-          <p className="text-[11px] md:text-base">{desc}</p>
+        <div className="p-4 flex flex-col gap-2 md:p-6">
+          <h1 className="font-bold text-md md:text-xl">{name}</h1>
+          <p className="text-[11px] md:text-xs">{desc}</p>
 
           <Link
-            className="text-primarycolor font-bold cursor-pointer text-sm"
+            className="text-primarycolor font-bold cursor-pointer text-xs"
             href={url}
           >
             Check it out {url}

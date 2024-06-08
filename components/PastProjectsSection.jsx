@@ -19,7 +19,7 @@ function PastProjectsSection() {
           </Link>
         </div>
 
-        <div className="flex md:flex-row flex-col gap-4 md:gap-8 items-center">
+        <div className="flex md:flex-row flex-col gap-4 md:gap-8">
           <div className="bg-white md:w-3/5 rounded-3xl">
             <div className="w-full">
               <Image
@@ -35,7 +35,7 @@ function PastProjectsSection() {
               <h1 className="font-bold text-md md:text-2xl">
                 Future Nautiq Knots
               </h1>
-              <p className="text-[11px] md:text-base">
+              <p className="text-[11px] md:text-xs">
                 FUNKS Ltd is an expert in boat shows and yacht brokerage, ranges
                 from small to large overcraft (boats/vessels).
               </p>
@@ -48,7 +48,7 @@ function PastProjectsSection() {
             </div>
           </div>
 
-          <div className="md:w-2/5 w-full flex md:flex-col gap-4 md:gap-8">
+          <div className="md:w-2/5 w-full flex flex-col md:flex-col gap-4 md:gap-8">
             <div className="bg-white rounded-3xl">
               <div className="w-full h-[200px]">
                 <Image
@@ -64,7 +64,7 @@ function PastProjectsSection() {
                 <h1 className="font-bold text-md md:text-2xl">
                   Divine Daao Cars{" "}
                 </h1>
-                <p className="text-[11px] md:text-base">
+                <p className="text-[11px] md:text-xs">
                   Divine Daao Nigeria Limited. RC 1310246 is a car rental
                   provider positioned to serve the commercial and leisure
                   segments of the travel industry and focused on value-conscious
@@ -94,7 +94,7 @@ function PastProjectsSection() {
                 <h1 className="font-bold text-md md:text-2xl">
                   Brightbell Janitorial Serivces{" "}
                 </h1>
-                <p className="text-[11px] md:text-base">
+                <p className="text-[11px] md:text-xs">
                   Home and CommercialCleaning Done Right Away Get reliable &
                   affordable cleaning services for your facility with a 100%
                   satisfaction guaranteed!{" "}
